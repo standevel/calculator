@@ -5,11 +5,57 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./calculator.js"></script>
+    <link rel="stylesheet" href="./calculator.css">
     <title>Calculator App</title>
 </head>
 
 <body>
+    <div class="container">
+        <h3>Calculator App</h3>
 
+        <div class="text-input">
+            <input id="result" type="text" readonly>
+        </div>
+
+        <div class="buttons">
+            <!-- first row -->
+            <button id="percent">%</button>
+            <button id="ce">CE</button>
+            <button id="c" onclick="clearScreen()">C</button>
+            <button id="delete">Del</button>
+
+            <!-- second row -->
+            <button id="half" class="action">1/x</button>
+            <button id="x2" class="action">x2</button>
+            <button id="sqr" class="action">Sqr</button>
+            <button id="divide" class="action">/</button>
+
+            <!-- third row -->
+            <button id="7" onclick="">7</button>
+            <button id="8">8</button>
+            <button id="9">9</button>
+            <button id="x" class="action">X</button>
+
+            <!-- forth row  -->
+            <button id="4">4</button>
+            <button id="5">5</button>
+            <button id="6">6</button>
+            <button id="sub" class="action">-</button>
+
+            <!-- fifth row  -->
+            <button id="1">1</button>
+            <button id="2">2</button>
+            <button id="3">3</button>
+            <button id="add" class="action">+</button>
+
+            <!-- sixth row  -->
+            <button id="add/sub">+/-</button>
+            <button id="zero">0</button>
+            <button id="dot">.</button>
+            <button id="equal">=</button>
+        </div>
+    </div>
 </body>
 
 </html>

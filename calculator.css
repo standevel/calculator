@@ -1,0 +1,44 @@
+.container {
+    background-color: rgb(110, 110, 170);
+    width: fit-content;
+    color: ghostwhite;
+    text-align: center;
+    padding: 20px;
+}
+
+.text-input {
+    margin-bottom: 10px;
+    /* font-size: large; */
+}
+
+.buttons {
+
+    display: grid;
+    grid-template-columns: repeat(4, 70px);
+    grid-template-rows: repeat(6, 70px);
+    gap: 5px;
+
+}
+
+input {
+    height: 50px;
+    width: 100%;
+    border: gray dotted 2px;
+}
+
+
+#equal {
+    background-color: green;
+    color: white;
+    border-radius: 50%;
+}
+
+.action {
+    background-color: rgb(52, 26, 26);
+    color: white;
+}
+
+button {
+    font-size: xx-large;
+    cursor: pointer;
+}
