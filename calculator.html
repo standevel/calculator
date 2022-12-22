@@ -20,40 +20,40 @@
 
         <div class="buttons">
             <!-- first row -->
-            <button id="percent">%</button>
+            <button id="percent" onclick="display('%')">%</button>
             <button id="ce">CE</button>
             <button id="c" onclick="clearScreen()">C</button>
-            <button id="delete">Del</button>
+            <button id="delete" onclick="del()">Del</button>
 
             <!-- second row -->
             <button id="half" class="action">1/x</button>
-            <button id="x2" class="action">x2</button>
-            <button id="sqr" class="action">Sqr</button>
-            <button id="divide" class="action">/</button>
+            <button id="x2" class="action" onclick="square()">x2</button>
+            <button id="sqr" class="action" onclick="sqrt()">Sqr</button>
+            <button id="divide" class="action" onclick="display('/')">/</button>
 
             <!-- third row -->
-            <button id="7" onclick="">7</button>
-            <button id="8">8</button>
-            <button id="9">9</button>
-            <button id="x" class="action">X</button>
+            <button id="7" onclick="display('7')">7</button>
+            <button id="8" onclick="display('8')">8</button>
+            <button id="9" onclick="display('9')">9</button>
+            <button id="x" class="action" onclick="display('*')">X</button>
 
             <!-- forth row  -->
-            <button id="4">4</button>
-            <button id="5">5</button>
-            <button id="6">6</button>
-            <button id="sub" class="action">-</button>
+            <button id="4" onclick="display('4')" onmouseenter="greet()" onmouseleave="moveleft()">4</button>
+            <button id="5" onclick="display('5')">5</button>
+            <button id="6" onclick="display('6')">6</button>
+            <button id="sub" class="action" onclick="display('-')">-</button>
 
             <!-- fifth row  -->
-            <button id="1">1</button>
-            <button id="2">2</button>
-            <button id="3">3</button>
-            <button id="add" class="action">+</button>
+            <button id="1" onclick="display('1')">1</button>
+            <button id="2" onclick="display('2')">2</button>
+            <button id="3" onclick="display('3')">3</button>
+            <button id="add" class="action" onclick="display('+')">+</button>
 
             <!-- sixth row  -->
             <button id="add/sub">+/-</button>
-            <button id="zero">0</button>
-            <button id="dot">.</button>
-            <button id="equal">=</button>
+            <button id="zero" onclick="display('0')">0</button>
+            <button id="dot" onclick="display('.')">.</button>
+            <button id="equal" onclick="solve()">=</button>
         </div>
     </div>
 </body>
